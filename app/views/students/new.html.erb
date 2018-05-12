@@ -10,7 +10,7 @@
   <%= submit_tag "Submit Student" %>
 <% end %>
 
-<% @student %>
+<% if @student %>
 First Name: <%= @student.first_name %>
 Last Name: <%= @student.last_name %>
 <% end %>
