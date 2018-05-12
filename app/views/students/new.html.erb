@@ -2,7 +2,7 @@
 
 <%= form_tag new_student_path do %>
   <label>Student First Name:</label>
-  <%= text_field_tag :'first_name' %><br>
+  <%= text_field_tag :'first_name', :'@student.first_name' %><br>
 
   <label>Student Last Name:</label>
   <%= text_field_tag :'last_name' %><br>
@@ -10,7 +10,3 @@
   <%= submit_tag "Submit Student" %>
 <% end %>
 
-<% if @student %>
-First Name: <%= @student.first_name %>
-Last Name: <%= @student.last_name %>
-<% end %>
